@@ -12,5 +12,6 @@ namespace eShop.Data.Entities
         public bool IsShowOnHone { set; get; }
         public int? ParentId { set; get; }
         public Status Status { set; get; }
+        public List<ProductInCategory> ProductInCategories { set; get; }
     }
 }
