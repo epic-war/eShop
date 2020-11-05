@@ -11,5 +11,6 @@ namespace eShop.Data.Entities
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }
+        public List<CategoryTranslation> CategoryTranslations { set; get; }
     }
 }

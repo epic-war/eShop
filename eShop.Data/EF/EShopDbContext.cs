@@ -20,6 +20,8 @@ namespace eShop.Data.EF
             modelBuilder.ApplyConfiguration(new ProductInCategoryConfigConfiguration());
             modelBuilder.ApplyConfiguration(new OrderConfigConfiguration());
             modelBuilder.ApplyConfiguration(new OrderDetailConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new CartConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new AppUserConfigConfiguration());
             //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products;
