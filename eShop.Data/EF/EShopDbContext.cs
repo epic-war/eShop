@@ -22,6 +22,11 @@ namespace eShop.Data.EF
             modelBuilder.ApplyConfiguration(new OrderDetailConfigConfiguration());
             modelBuilder.ApplyConfiguration(new CartConfigConfiguration());
             modelBuilder.ApplyConfiguration(new AppUserConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryTranslationConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new LanguageConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductTranslationConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new PromotionConfigConfiguration());
             //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products;
@@ -34,5 +39,6 @@ namespace eShop.Data.EF
         public DbSet<ProductTranslation> ProductTranslations;
         public DbSet<Promotion> Promotions;
         public DbSet<Transaction> Transactions;
+        public DbSet<AppUser> AppUsers;
     }
 }
